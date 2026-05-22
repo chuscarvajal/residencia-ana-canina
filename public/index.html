@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Residencia de Perros y Gatos en Oropesa del Mar | Residencia Ana</title>
+<meta name="description" content="Residencia de perros y gatos en Oropesa del Mar, Castellón. 4,9★ con más de 482 reseñas en Google. Desde 16€/día. Llama ahora: 642 27 80 35."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'surface': '#fcf9f8',
+          'surface-dim': '#dcd9d9',
+          'surface-bright': '#fcf9f8',
+          'surface-container-lowest': '#ffffff',
+          'surface-container-low': '#f6f3f2',
+          'surface-container': '#f0eded',
+          'surface-container-high': '#eae7e7',
+          'surface-container-highest': '#e4e2e1',
+          'on-surface': '#1b1c1c',
+          'on-surface-variant': '#414844',
+          'inverse-surface': '#303030',
+          'inverse-on-surface': '#f3f0f0',
+          'outline': '#717973',
+          'outline-variant': '#c1c8c2',
+          'surface-tint': '#059669',
+          'primary': '#059669',
+          'on-primary': '#ffffff',
+          'primary-container': '#047857',
+          'on-primary-container': '#a7f3d0',
+          'inverse-primary': '#d1fae5',
+          'secondary': '#855300',
+          'on-secondary': '#ffffff',
+          'secondary-container': '#fea619',
+          'on-secondary-container': '#684000',
+          'tertiary': '#3b1f00',
+          'on-tertiary': '#ffffff',
+          'tertiary-container': '#56340e',
+          'on-tertiary-container': '#cd9d6d',
+          'primary-fixed': '#d1fae5',
+          'primary-fixed-dim': '#a7f3d0',
+          'on-primary-fixed': '#022c22',
+          'on-primary-fixed-variant': '#065f46',
+          'secondary-fixed': '#ffddb8',
+          'secondary-fixed-dim': '#ffb95f',
+          'background': '#fcf9f8',
+          'on-background': '#1b1c1c',
+        },
+        fontFamily: {
+          'epilogue': ['Epilogue', 'sans-serif'],
+          'inter': ['Inter', 'sans-serif'],
+        },
+        maxWidth: { 'container-max-width': '1280px' },
+        spacing: {
+          'margin-mobile': '1rem',
+          'margin-desktop': '2.5rem',
+          'stack-sm': '0.5rem',
+          'stack-md': '1rem',
+          'stack-lg': '2rem',
+          'gutter': '1.5rem',
+        },
+      }
+    }
+  }
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: #fcf9f8; color: #1b1c1c; }
+  .font-headline-xl { font-family: 'Epilogue', sans-serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; }
+  .font-headline-lg { font-family: 'Epilogue', sans-serif; font-size: clamp(1.75rem, 3.5vw, 2rem); font-weight: 700; line-height: 1.25; letter-spacing: -0.01em; }
+  .font-headline-md { font-family: 'Epilogue', sans-serif; font-size: 1.5rem; font-weight: 600; line-height: 1.35; }
+  .font-body-lg  { font-family: 'Inter', sans-serif; font-size: 1.125rem; font-weight: 400; line-height: 1.7; }
+  .font-body-md  { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.6; }
+  .font-label-md { font-family: 'Inter', sans-serif; font-size: 0.875rem; font-weight: 500; line-height: 1.45; }
+  .font-label-sm { font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 600; line-height: 1.35; }
+  .text-headline-lg { font-family: 'Epilogue', sans-serif; font-size: clamp(1.75rem, 3.5vw, 2rem); font-weight: 700; line-height: 1.25; }
+  .text-headline-md { font-family: 'Epilogue', sans-serif; font-size: 1.5rem; font-weight: 600; line-height: 1.35; }
+  .text-body-md { font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 1.6; }
+  .text-label-md { font-family: 'Inter', sans-serif; font-size: 0.875rem; font-weight: 500; }
+  .text-label-sm { font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 600; }
+  .tonal-shadow       { box-shadow: 0 4px 8px rgba(5,150,105,0.04), 0 1px 3px rgba(5,150,105,0.06); }
+  .tonal-shadow-hover { box-shadow: 0 8px 16px rgba(5,150,105,0.08), 0 2px 6px rgba(5,150,105,0.08); }
+  .anim { opacity: 0; transform: translateY(16px); transition: opacity 0.55s ease, transform 0.55s ease; }
+  .anim.anim-slide-l { transform: translateX(-20px); }
+  .anim.anim-slide-r { transform: translateX(20px); }
+  .anim.visible { opacity: 1; transform: none; }
+  .delay-1 { transition-delay: 0.1s; }
+  .delay-2 { transition-delay: 0.2s; }
+  .delay-3 { transition-delay: 0.3s; }
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+  @keyframes carousel-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  #reviewCarousel { animation: carousel-scroll 32s linear infinite; }
+  #reviewCarousel:hover { animation-play-state: paused; }
+</style>
+</head>
+<body class="bg-background">
+
+<!-- ════════════════════════════ NAV ════════════════════════════ -->
+<header class="sticky top-0 z-40 w-full bg-background/95 backdrop-blur-sm border-b border-[#E9E5D9]">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between h-16">
+    <a href="#" class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-primary text-[26px]" style="font-variation-settings:'FILL' 1;">favorite</span>
+      <span style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.2rem;color:#059669;letter-spacing:-0.01em;">Residencia Ana</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="#servicios" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Servicios</a>
+      <a href="#sobre-nosotros" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">El centro</a>
+      <a href="#resenas" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Reseñas</a>
+      <a href="#contacto" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Contacto</a>
+      <a href="tel:642278035" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-lg font-bold hover:bg-surface-tint transition-colors tonal-shadow tonal-shadow-hover">
+        <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">phone</span>
+        642 27 80 35
+      </a>
+    </nav>
+    <button id="menuToggle" class="md:hidden text-primary" aria-label="Menú">
+      <span class="material-symbols-outlined text-[28px]">menu</span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden bg-background border-t border-[#E9E5D9] px-margin-mobile py-4 flex flex-col gap-4">
+    <a href="#servicios" class="font-label-md text-on-surface-variant">Servicios</a>
+    <a href="#sobre-nosotros" class="font-label-md text-on-surface-variant">El centro</a>
+    <a href="#resenas" class="font-label-md text-on-surface-variant">Reseñas</a>
+    <a href="#contacto" class="font-label-md text-on-surface-variant">Contacto</a>
+    <a href="tel:642278035" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-lg font-bold w-fit">
+      <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">phone</span>
+      642 27 80 35
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- ════════════════════════════ HERO ════════════════════════════ -->
+<section class="w-full bg-background">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
+    <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+      <div class="order-2 md:order-1 w-full md:w-1/2 flex flex-col gap-6">
+        <div class="flex items-center gap-2">
+          <div class="flex items-center gap-0.5">
+            <span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings:'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings:'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings:'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings:'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings:'FILL' 1;">star</span>
+          </div>
+          <span class="font-label-md text-label-md text-on-surface-variant">4,9 · 482 reseñas en Google</span>
+        </div>
+        <h1 class="anim font-headline-xl text-primary">
+          Residencia de Perros<br/>y Gatos en Oropesa del Mar
+        </h1>
+        <p class="anim delay-1 font-body-lg text-body-lg text-on-surface-variant">
+          Cuidamos a tu perro y a tu gato como si fueran nuestros. En Residencia Ana ofrecemos alojamiento de calidad en Oropesa del Mar — con atención personalizada y trato familiar desde el primer día.
+        </p>
+        <div class="anim delay-2 flex flex-col sm:flex-row gap-3">
+          <a href="tel:642278035" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md font-bold px-6 py-3.5 rounded-lg tonal-shadow tonal-shadow-hover hover:bg-surface-tint transition-colors">
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1;">phone</span>
+            Llama ahora
+          </a>
+          <a href="https://wa.me/34642278035" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-6 py-3.5 rounded-lg hover:opacity-90 transition-opacity">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12.031 2C6.488 2 2 6.487 2 12.031c0 1.868.49 3.618 1.346 5.137L2 22l4.988-1.306A10.01 10.01 0 0012.031 22C17.576 22 22 17.513 22 11.969 22 6.426 17.576 2 12.031 2zm5.07 14.29c-.214.6-1.057 1.097-1.73 1.24-.46.094-1.06.17-3.083-.661-2.588-1.04-4.256-3.678-4.384-3.847-.127-.169-1.038-1.38-1.038-2.634 0-1.253.655-1.87.888-2.12.232-.25.506-.313.675-.313.17 0 .338.002.487.01.156.008.365-.06.571.436.212.51.72 1.762.783 1.889.063.127.105.275.021.444-.084.17-.127.275-.254.424-.126.148-.265.33-.378.444-.127.126-.259.263-.111.516.148.253.656 1.081 1.408 1.751.969.862 1.786 1.13 2.04 1.257.253.126.402.105.55-.063.148-.169.634-.74.803-.994.169-.253.338-.211.57-.127.232.084 1.473.694 1.726.822.253.126.422.19.484.296.063.105.063.607-.15 1.21z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+        <div class="anim delay-3 flex flex-wrap gap-2 mt-2">
+          <span class="inline-flex items-center gap-1.5 bg-primary-fixed text-primary font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold">
+            <span class="material-symbols-outlined text-[14px]" style="font-variation-settings:'FILL' 1;">pets</span>
+            Perros y Gatos
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-secondary-fixed text-tertiary font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold">
+            <span class="material-symbols-outlined text-[14px]" style="font-variation-settings:'FILL' 1;">payments</span>
+            Desde 16€/día
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-primary-fixed text-primary font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold">
+            <span class="material-symbols-outlined text-[14px]" style="font-variation-settings:'FILL' 1;">favorite</span>
+            Trato familiar
+          </span>
+        </div>
+      </div>
+      <div class="order-1 md:order-2 anim anim-slide-r delay-1 w-full md:w-1/2">
+        <img
+          alt="Perro en Residencia Ana de Perros y Gatos en Oropesa del Mar, Castellón"
+          class="rounded-2xl w-full h-[380px] md:h-[460px] object-cover shadow-[0_8px_32px_rgba(5,150,105,0.12)] border border-[#E9E5D9]"
+          src="p4.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ STATS ════════════════════════════ -->
+<section class="w-full bg-primary-container border-y border-[#047857]">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">4,9★</p>
+        <p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Valoración media</p>
+      </div>
+      <div>
+        <p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">482</p>
+        <p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Reseñas en Google</p>
+      </div>
+      <div>
+        <p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">16€</p>
+        <p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Desde / día</p>
+      </div>
+      <div>
+        <p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">Castellón</p>
+        <p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Oropesa del Mar</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ SERVICIOS ════════════════════════════ -->
+<section id="servicios" class="w-full bg-background py-20">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <h2 class="anim font-headline-lg text-primary mb-3">Nuestros servicios</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-xl mx-auto">Alojamiento con cariño para perros y gatos en la Costa de Azahar.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Residencia Perros -->
+      <div class="anim group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
+        <img src="p7.jpg" alt="Residencia para perros" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+        <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.82) 38%, transparent 72%);"></div>
+        <div class="relative z-10 flex flex-col h-full p-6 gap-3">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(4px);">
+            <span class="material-symbols-outlined text-white text-[22px]" style="font-variation-settings:'FILL' 1;">pets</span>
+          </div>
+          <div class="mt-auto">
+            <h3 class="font-headline-md text-[1.1rem] text-white mb-2">Residencia para Perros</h3>
+            <p class="font-body-md text-[0.875rem] leading-relaxed mb-4" style="color:rgba(255,255,255,0.80);">Tu perro alojado con cariño y atención constante. Estancias cortas o largas, adaptadas a sus necesidades.</p>
+            <ul class="flex flex-col gap-2">
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Desde 16€/día
+              </li>
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Atención personalizada
+              </li>
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Zona exterior propia
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Residencia Gatos -->
+      <div class="anim delay-1 group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
+        <img src="p8.jpg" alt="Residencia para gatos" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+        <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.82) 38%, transparent 72%);"></div>
+        <div class="relative z-10 flex flex-col h-full p-6 gap-3">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(4px);">
+            <span class="material-symbols-outlined text-white text-[22px]" style="font-variation-settings:'FILL' 1;">cruelty_free</span>
+          </div>
+          <div class="mt-auto">
+            <h3 class="font-headline-md text-[1.1rem] text-white mb-2">Residencia para Gatos</h3>
+            <p class="font-body-md text-[0.875rem] leading-relaxed mb-4" style="color:rgba(255,255,255,0.80);">Espacio tranquilo y adaptado para gatos. Tu felino cuidado con mimo en un entorno seguro y sin estrés.</p>
+            <ul class="flex flex-col gap-2">
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Zona exclusiva para gatos
+              </li>
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Ambiente tranquilo
+              </li>
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Estancias flexibles
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Socialización y juego -->
+      <div class="anim delay-2 group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
+        <img src="p3.jpg" alt="Socialización y juego" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+        <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.82) 38%, transparent 72%);"></div>
+        <div class="relative z-10 flex flex-col h-full p-6 gap-3">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(4px);">
+            <span class="material-symbols-outlined text-white text-[22px]" style="font-variation-settings:'FILL' 1;">groups</span>
+          </div>
+          <div class="mt-auto">
+            <h3 class="font-headline-md text-[1.1rem] text-white mb-2">Socialización y Juego</h3>
+            <p class="font-body-md text-[0.875rem] leading-relaxed mb-4" style="color:rgba(255,255,255,0.80);">Zona exterior con espacio para que los perros se relacionen, jueguen y disfruten de aire fresco.</p>
+            <ul class="flex flex-col gap-2">
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Zona exterior cercada
+              </li>
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Supervisión permanente
+              </li>
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Incluido en la estancia
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuidado personalizado -->
+      <div class="anim delay-3 group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
+        <img src="p5.jpg" alt="Cuidado personalizado" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+        <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.82) 38%, transparent 72%);"></div>
+        <div class="relative z-10 flex flex-col h-full p-6 gap-3">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(4px);">
+            <span class="material-symbols-outlined text-white text-[22px]" style="font-variation-settings:'FILL' 1;">favorite</span>
+          </div>
+          <div class="mt-auto">
+            <h3 class="font-headline-md text-[1.1rem] text-white mb-2">Cuidado Personalizado</h3>
+            <p class="font-body-md text-[0.875rem] leading-relaxed mb-4" style="color:rgba(255,255,255,0.80);">Cada animal es único. Nos adaptamos a sus rutinas, alimentación y necesidades para que se sienta como en casa.</p>
+            <ul class="flex flex-col gap-2">
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Rutinas respetadas
+              </li>
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Alimentación propia si deseas
+              </li>
+              <li class="flex items-center gap-2 text-[13px]" style="color:rgba(255,255,255,0.90);">
+                <span class="material-symbols-outlined text-[15px]" style="color:#fea619;font-variation-settings:'FILL' 1;">check_circle</span>Trato familiar y cercano
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ SOBRE EL CENTRO ════════════════════════════ -->
+<section id="sobre-nosotros" class="w-full bg-surface-container-low py-20">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <h2 class="anim font-headline-lg text-primary">Sobre la residencia</h2>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="anim anim-slide-l w-full md:w-1/2 flex flex-col gap-6">
+        <h3 class="font-headline-lg text-[1.6rem] text-primary leading-snug">Tu mascota, en manos de alguien que la quiere.</h3>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Residencia Ana es un espacio de cuidado familiar en Oropesa del Mar, donde los animales son tratados con el mismo cariño que en su propio hogar. Llevamos años dando servicio a familias de la Costa de Azahar y sus alrededores.
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant">
+          Atendemos tanto a perros como a gatos, con zonas diferenciadas para que cada animal se sienta cómodo y seguro. La confianza de casi 500 familias en Google no es casualidad.
+        </p>
+        <div class="flex flex-col gap-3">
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-on-primary text-[16px]" style="font-variation-settings:'FILL' 1;">pets</span>
+            </div>
+            <div>
+              <p class="font-label-md font-semibold text-primary">Perros y gatos bienvenidos</p>
+              <p class="font-body-md text-[0.9rem] text-on-surface-variant">Una de las pocas residencias en la zona que atiende a ambas especies.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-on-secondary text-[16px]" style="font-variation-settings:'FILL' 1;">payments</span>
+            </div>
+            <div>
+              <p class="font-label-md font-semibold text-primary">Precios claros desde 16€/día</p>
+              <p class="font-body-md text-[0.9rem] text-on-surface-variant">Sin sorpresas ni cargos ocultos. Tarifas directas y transparentes.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-tertiary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-on-tertiary text-[16px]" style="font-variation-settings:'FILL' 1;">home</span>
+            </div>
+            <div>
+              <p class="font-label-md font-semibold text-primary">Ambiente familiar</p>
+              <p class="font-body-md text-[0.9rem] text-on-surface-variant">No somos una empresa. Somos una familia que ama a los animales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="anim anim-slide-r delay-1 w-full md:w-1/2">
+        <img
+          alt="Responsable de Residencia Ana con un perro en Oropesa del Mar"
+          class="rounded-2xl w-full h-[400px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]"
+          src="p9.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ POR QUÉ ELEGIRNOS ════════════════════════════ -->
+<section class="w-full py-20" style="background:#1c1c1c;">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest mb-4" style="background:rgba(165,208,185,0.15);color:#d1fae5;letter-spacing:0.12em;">¿Por qué elegirnos?</span>
+      <h2 class="anim font-headline-lg text-white mb-3">Lo que nos hace diferentes</h2>
+      <p class="anim delay-1 font-body-md max-w-xl mx-auto" style="color:rgba(255,255,255,0.65);">Una residencia familiar donde tu mascota no es un número — es una parte más de nuestra familia durante su estancia.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="anim rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">pets</span>
+        </div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Perros y gatos</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Atendemos a ambas especies con zonas diferenciadas. No tienes que buscar dos residencias distintas para tus mascotas.</p>
+      </div>
+
+      <div class="anim delay-1 rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">payments</span>
+        </div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Desde 16€/día</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Un precio justo y transparente. Sin cargos ocultos ni tarifas sorpresa al final de la estancia.</p>
+      </div>
+
+      <div class="anim delay-2 rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">favorite</span>
+        </div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Trato familiar de verdad</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">No somos un hotel masificado. Tu mascota recibe atención individual y constante, como si fuera nuestra propia.</p>
+      </div>
+
+      <div class="anim delay-1 rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">location_on</span>
+        </div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Ubicación inmejorable</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">En Oropesa del Mar, en la Costa de Azahar. Fácil acceso si te vas de vacaciones por la costa mediterránea.</p>
+      </div>
+
+      <div class="anim delay-2 rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">4,9★ · 482 reseñas</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Casi 500 familias han dejado su opinión en Google con una nota casi perfecta. La satisfacción de nuestros clientes lo dice todo.</p>
+      </div>
+
+      <div class="anim delay-3 rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">calendar_month</span>
+        </div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Estancias flexibles</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Desde una noche hasta semanas enteras. Nos adaptamos a tus fechas y necesidades sin problemas.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ GALERÍA ════════════════════════════ -->
+<section class="w-full bg-background py-16">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-10">
+      <h2 class="anim font-headline-lg text-primary mb-3">Nuestras instalaciones</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant">Residencia familiar de perros y gatos en Oropesa del Mar, Castellón</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+
+      <div class="group relative overflow-hidden rounded-2xl cursor-pointer" style="height:200px;">
+        <img src="p1.jpg" alt="Cachorro en zona exterior de la residencia"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+          <p class="text-on-primary font-label-md font-semibold text-sm">Zona exterior</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl cursor-pointer" style="height:200px;">
+        <img src="p2.jpg" alt="Perro disfrutando del jardín"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+          <p class="text-on-primary font-label-md font-semibold text-sm">Jardín de ejercicio</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl cursor-pointer" style="height:200px;">
+        <img src="p3.jpg" alt="Perros explorando el entorno"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+          <p class="text-on-primary font-label-md font-semibold text-sm">Zona de socialización</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl cursor-pointer" style="height:200px;">
+        <img src="p4.jpg" alt="Perro bien cuidado en la residencia"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+          <p class="text-on-primary font-label-md font-semibold text-sm">Cuidado individual</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl cursor-pointer" style="height:200px;">
+        <img src="p5.jpg" alt="Responsable con los perros a su cargo"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+          <p class="text-on-primary font-label-md font-semibold text-sm">Atención directa</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl cursor-pointer" style="height:200px;">
+        <img src="p6.jpg" alt="Interior de las instalaciones"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+          <p class="text-on-primary font-label-md font-semibold text-sm">Instalaciones interiores</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl cursor-pointer" style="height:200px;">
+        <img src="p7.jpg" alt="Pastor alemán en zona exterior"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+          <p class="text-on-primary font-label-md font-semibold text-sm">Perros residentes</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl cursor-pointer" style="height:200px;">
+        <img src="p8.jpg" alt="Cachorro descansando cómodamente"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+          <p class="text-on-primary font-label-md font-semibold text-sm">Descanso cómodo</p>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-2xl cursor-pointer" style="height:200px;">
+        <img src="p9.jpg" alt="Responsable de la residencia con su perro"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+          <p class="text-on-primary font-label-md font-semibold text-sm">Nuestro equipo</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ TARIFAS ════════════════════════════ -->
+<section id="tarifas" class="w-full py-0 overflow-hidden">
+
+  <div class="relative w-full flex items-center justify-center" style="min-height:220px;">
+    <img src="p2.jpg" alt="Tarifas Residencia Ana" class="absolute inset-0 w-full h-full object-cover"/>
+    <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(5,150,105,0.88) 0%,rgba(59,31,0,0.82) 100%);"></div>
+    <div class="relative z-10 text-center px-margin-mobile py-14">
+      <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4" style="background:#fea619;color:#3b1f00;">Nuestras tarifas</span>
+      <h2 class="font-headline-lg text-white mb-2">Precios claros, sin sorpresas</h2>
+      <p class="font-body-md max-w-lg mx-auto" style="color:rgba(255,255,255,0.75);">Residencia de perros y gatos · Estancias flexibles · Trato familiar</p>
+    </div>
+  </div>
+
+  <div class="w-full py-16 px-margin-mobile md:px-margin-desktop" style="background:#f0eded;">
+  <div class="max-w-container-max-width mx-auto">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-10">
+
+      <!-- Residencia Perros -->
+      <div class="anim relative bg-white rounded-2xl overflow-hidden flex flex-col" style="box-shadow:0 4px 24px rgba(5,150,105,0.13);border:2px solid #059669;">
+        <div class="relative overflow-hidden" style="height:180px;">
+          <img src="p7.jpg" alt="Residencia para perros" class="w-full h-full object-cover"/>
+          <div class="absolute inset-0" style="background:linear-gradient(to bottom, transparent 35%, rgba(5,150,105,0.65) 100%);"></div>
+          <div class="absolute bottom-0 left-0 right-0 flex items-end justify-between px-5 pb-4">
+            <div class="flex items-baseline gap-1">
+              <span class="font-bold leading-none" style="color:#fea619;font-family:'Epilogue',sans-serif;font-size:2.75rem;text-shadow:0 2px 8px rgba(0,0,0,0.5);">16€</span>
+              <span class="text-white font-medium text-sm opacity-90">/ día</span>
+            </div>
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase" style="background:#fea619;color:#3b1f00;">Perros</span>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col gap-3 flex-1">
+          <h3 class="font-headline-md text-[1.1rem] text-primary">Residencia Canina</h3>
+          <p class="font-body-md text-[0.875rem] text-on-surface-variant">Alojamiento diario con cuidado y atención personalizada</p>
+          <ul class="flex flex-col gap-2 mt-auto">
+            <li class="flex items-center gap-2 text-[13px] text-on-surface-variant">
+              <span class="material-symbols-outlined text-[15px]" style="color:#059669;font-variation-settings:'FILL' 1;">check_circle</span>Zona exterior propia
+            </li>
+            <li class="flex items-center gap-2 text-[13px] text-on-surface-variant">
+              <span class="material-symbols-outlined text-[15px]" style="color:#059669;font-variation-settings:'FILL' 1;">check_circle</span>Alimentación incluida
+            </li>
+            <li class="flex items-center gap-2 text-[13px] text-on-surface-variant">
+              <span class="material-symbols-outlined text-[15px]" style="color:#059669;font-variation-settings:'FILL' 1;">check_circle</span>Atención diaria
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Residencia Gatos -->
+      <div class="anim delay-1 relative bg-white rounded-2xl overflow-hidden flex flex-col" style="box-shadow:0 4px 24px rgba(5,150,105,0.09);border:1px solid #e4e2e1;">
+        <div class="relative overflow-hidden" style="height:180px;">
+          <img src="p8.jpg" alt="Residencia para gatos" class="w-full h-full object-cover"/>
+          <div class="absolute inset-0" style="background:linear-gradient(to bottom, transparent 35%, rgba(5,150,105,0.65) 100%);"></div>
+          <div class="absolute bottom-0 left-0 right-0 flex items-end px-5 pb-4">
+            <div class="flex items-baseline gap-1">
+              <span class="font-bold leading-none" style="color:#fea619;font-family:'Epilogue',sans-serif;font-size:2.75rem;text-shadow:0 2px 8px rgba(0,0,0,0.5);">Consultar</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 flex flex-col gap-3 flex-1">
+          <h3 class="font-headline-md text-[1.1rem] text-primary">Residencia Felina</h3>
+          <p class="font-body-md text-[0.875rem] text-on-surface-variant">Espacio tranquilo y exclusivo para gatos</p>
+          <ul class="flex flex-col gap-2 mt-auto">
+            <li class="flex items-center gap-2 text-[13px] text-on-surface-variant">
+              <span class="material-symbols-outlined text-[15px]" style="color:#059669;font-variation-settings:'FILL' 1;">check_circle</span>Zona exclusiva para gatos
+            </li>
+            <li class="flex items-center gap-2 text-[13px] text-on-surface-variant">
+              <span class="material-symbols-outlined text-[15px]" style="color:#059669;font-variation-settings:'FILL' 1;">check_circle</span>Ambiente tranquilo
+            </li>
+            <li class="flex items-center gap-2 text-[13px] text-on-surface-variant">
+              <span class="material-symbols-outlined text-[15px]" style="color:#059669;font-variation-settings:'FILL' 1;">check_circle</span>Cuidado diario
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+      <div class="anim delay-2 bg-surface-container-lowest rounded-2xl p-6 border border-[#E9E5D9] tonal-shadow">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#56340e;">
+            <span class="material-symbols-outlined text-[#cd9d6d] text-[18px]" style="font-variation-settings:'FILL' 1;">add_circle</span>
+          </div>
+          <h3 class="font-headline-md text-[1rem] text-primary">Servicios adicionales</h3>
+        </div>
+        <ul class="flex flex-col gap-3">
+          <li class="flex items-center justify-between">
+            <span class="font-body-md text-[0.875rem] text-on-surface-variant">Segunda mascota</span>
+            <span class="font-semibold text-[0.875rem]" style="color:#855300;">Consultar</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <span class="font-body-md text-[0.875rem] text-on-surface-variant">Baño antes de salida</span>
+            <span class="font-semibold text-[0.875rem]" style="color:#855300;">Consultar</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <span class="font-body-md text-[0.875rem] text-on-surface-variant">Medicación especial</span>
+            <span class="font-semibold text-[0.875rem]" style="color:#855300;">Sin coste extra</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="anim delay-3 bg-surface-container-lowest rounded-2xl p-6 border border-[#E9E5D9] tonal-shadow">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-on-primary text-[18px]" style="font-variation-settings:'FILL' 1;">event_available</span>
+          </div>
+          <h3 class="font-headline-md text-[1rem] text-primary">Cómo reservar</h3>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div>
+            <p class="font-label-md text-[11px] uppercase tracking-widest text-outline mb-1.5">Contacto</p>
+            <p class="font-body-md text-[0.875rem] text-on-surface-variant">Llama al <span class="font-semibold text-primary">642 27 80 35</span> o escríbenos por WhatsApp</p>
+          </div>
+          <div class="border-t border-[#E9E5D9] pt-4">
+            <p class="font-label-md text-[11px] uppercase tracking-widest text-outline mb-1.5">Confirmación</p>
+            <p class="font-body-md text-[0.875rem] text-on-surface-variant">Dinos las fechas y el tipo de mascota — confirmamos plaza enseguida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="https://wa.me/34642278035" target="_blank" rel="noopener"
+        class="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold transition-transform hover:scale-105 active:scale-95"
+        style="background:#855300;color:#ffffff;box-shadow:0 4px 20px rgba(133,83,0,0.35);">
+        <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1;">chat</span>
+        Consultar disponibilidad por WhatsApp
+      </a>
+    </div>
+
+  </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ RESEÑAS ════════════════════════════ -->
+<section id="resenas" class="w-full bg-background py-20">
+  <div class="max-w-container-max-width mx-auto">
+    <div class="text-center mb-10 px-margin-mobile md:px-margin-desktop">
+      <h2 class="anim font-headline-lg text-primary mb-3">Lo que dicen nuestros clientes</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-2xl mx-auto">482 reseñas reales en Google Maps · 4,9 ★ de media</p>
+    </div>
+    <div class="overflow-hidden py-2">
+    <div id="reviewCarousel" class="flex gap-5 pb-4" style="width:max-content;">
+
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1 text-secondary">
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed flex-1">"Dejamos a nuestro perro una semana y salió sano, feliz y bien cuidado. Ana es una persona muy profesional y cercana. Se nota que de verdad quiere a los animales. Totalmente recomendable."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]">
+          <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center bg-[#059669] text-white font-semibold text-xs">MP</div>
+          <div>
+            <p class="font-label-md text-label-md font-semibold text-primary">María P.</p>
+            <p class="font-label-sm text-label-sm text-outline">Google Maps</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1 text-secondary">
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed flex-1">"La mejor residencia de la zona. Llevamos a nuestra gata dos veces y siempre volvemos. El trato es muy bueno, el precio justo y la comunicación excelente. No busques más."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]">
+          <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center bg-[#855300] text-white font-semibold text-xs">JL</div>
+          <div>
+            <p class="font-label-md text-label-md font-semibold text-primary">José L.</p>
+            <p class="font-label-sm text-label-sm text-outline">Local Guide · Google Maps</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1 text-secondary">
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed flex-1">"Llevamos al perro y al gato a la vez y los cuidaron perfectamente a los dos. Se nota que tienen experiencia con ambas especies. Las instalaciones están limpias y son cómodas."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]">
+          <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center bg-[#3b1f00] text-white font-semibold text-xs">CR</div>
+          <div>
+            <p class="font-label-md text-label-md font-semibold text-primary">Carmen R.</p>
+            <p class="font-label-sm text-label-sm text-outline">Google Maps</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1 text-secondary">
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed flex-1">"Muy buena relación calidad-precio. El perro volvió muy contento y se nota que lo han tratado bien. 100% recomendable para quien busque una residencia de confianza en Castellón."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]">
+          <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center bg-[#047857] text-white font-semibold text-xs">
+            <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1;">person</span>
+          </div>
+          <div>
+            <p class="font-label-md text-label-md font-semibold text-primary">Cliente verificado</p>
+            <p class="font-label-sm text-label-sm text-outline">Google Maps</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1 text-secondary">
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed flex-1">"Excelente servicio y precio muy razonable. Volveremos sin duda. Los perros se quedan a gusto y tú te vas de vacaciones sin preocupaciones."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]">
+          <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center bg-[#653e00] text-white font-semibold text-xs">
+            <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1;">person</span>
+          </div>
+          <div>
+            <p class="font-label-md text-label-md font-semibold text-primary">Cliente verificado</p>
+            <p class="font-label-sm text-label-sm text-outline">Google Maps</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <div class="text-center mt-8 px-margin-mobile md:px-margin-desktop">
+      <a href="https://www.google.com/maps/place/?q=place_id:ChIJk0Y_Q9kEoBIRhEmEFfpTTyA" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-secondary font-label-md font-bold hover:text-secondary-fixed-dim transition-colors">
+        Ver todas las reseñas en Google <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ FAQ ════════════════════════════ -->
+<section class="w-full bg-surface-container-low py-20">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="anim font-headline-lg text-primary mb-8 text-center">Preguntas frecuentes</h2>
+      <div class="space-y-4">
+
+        <details class="group bg-white rounded-xl border border-surface-container-highest tonal-shadow overflow-hidden">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <span class="font-body-lg text-[17px] font-semibold text-primary">¿Aceptáis tanto perros como gatos?</span>
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary flex-shrink-0">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant font-body-md">
+            Sí, atendemos a perros y gatos con zonas diferenciadas para cada especie. Puedes traernos a ambas mascotas a la vez sin ningún problema.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-xl border border-surface-container-highest tonal-shadow overflow-hidden">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <span class="font-body-lg text-[17px] font-semibold text-primary">¿Cuánto cuesta la residencia?</span>
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary flex-shrink-0">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant font-body-md">
+            La residencia para perros comienza desde <strong>16€ al día</strong>. El precio para gatos puede variar — llámanos o escríbenos y te lo confirmamos en seguida.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-xl border border-surface-container-highest tonal-shadow overflow-hidden">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <span class="font-body-lg text-[17px] font-semibold text-primary">¿Qué necesito llevar para la residencia?</span>
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary flex-shrink-0">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant font-body-md">
+            Es necesario que tu mascota esté al día de vacunas y desparasitada. Puedes traer su cama, juguetes o alimento habitual. Nosotros nos adaptamos a sus rutinas para que se sienta cómodo desde el primer día.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-xl border border-surface-container-highest tonal-shadow overflow-hidden">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <span class="font-body-lg text-[17px] font-semibold text-primary">¿Puedo dejar a mi mascota en verano?</span>
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary flex-shrink-0">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant font-body-md">
+            Sí, atendemos durante todo el año, incluidas las temporadas altas de verano y Navidad. Reserva con antelación para garantizar plaza en las fechas más solicitadas.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-xl border border-surface-container-highest tonal-shadow overflow-hidden">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <span class="font-body-lg text-[17px] font-semibold text-primary">¿Cómo puedo reservar?</span>
+            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary flex-shrink-0">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant font-body-md">
+            Llámanos al <strong>642 27 80 35</strong> o escríbenos por WhatsApp. Cuéntanos las fechas, el tipo de mascota y te confirmamos disponibilidad y precio enseguida.
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ CONTACTO + MAPA ════════════════════════════ -->
+<section id="contacto" class="w-full bg-background py-20">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <h2 class="anim font-headline-lg text-primary mb-3">Dónde encontrarnos</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant">Oropesa del Mar · Costa de Azahar, Castellón</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+      <div class="flex flex-col gap-6">
+        <div class="bg-primary rounded-2xl p-6 text-on-primary flex flex-col gap-4">
+          <h3 class="font-headline-md text-[1.2rem]">Contacto directo</h3>
+          <a href="tel:642278035" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+            <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">phone</span>
+            <div>
+              <p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">Teléfono</p>
+              <p class="font-body-md font-semibold">642 27 80 35</p>
+            </div>
+          </a>
+          <a href="https://wa.me/34642278035" target="_blank" rel="noopener" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+            <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">chat</span>
+            <div>
+              <p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">WhatsApp</p>
+              <p class="font-body-md font-semibold">642 27 80 35</p>
+            </div>
+          </a>
+          <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">location_on</span>
+            <div>
+              <p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">Dirección</p>
+              <p class="font-body-md">Oropesa del Mar, Castellón</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-lowest rounded-2xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">star</span>
+            <span class="font-body-md text-on-surface-variant"><strong class="text-primary">4,9 ★</strong> · 482 reseñas verificadas en Google</span>
+          </div>
+          <a href="https://www.google.com/maps/place/?q=place_id:ChIJk0Y_Q9kEoBIRhEmEFfpTTyA" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md font-bold px-5 py-3 rounded-lg hover:bg-surface-tint transition-colors w-fit">
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">map</span>
+            Ver ficha en Google Maps
+          </a>
+        </div>
+
+        <div class="bg-surface-container-lowest rounded-2xl p-6 border border-[#E9E5D9] tonal-shadow">
+          <h3 class="font-headline-md text-[1.1rem] text-primary mb-4">Consulta sin compromiso</h3>
+          <form onsubmit="handleSubmit(event)" class="flex flex-col gap-4">
+            <div>
+              <label class="font-label-md text-label-md text-primary block mb-1.5" for="name">Tu nombre</label>
+              <input id="name" required type="text" placeholder="Ej. María García"
+                class="w-full bg-white border border-[#E9E5D9] rounded-lg px-4 py-2.5 font-body-md text-on-surface focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"/>
+            </div>
+            <div>
+              <label class="font-label-md text-label-md text-primary block mb-1.5" for="petInfo">Tu mascota</label>
+              <input id="petInfo" required type="text" placeholder="Especie, raza, edad y nombre"
+                class="w-full bg-white border border-[#E9E5D9] rounded-lg px-4 py-2.5 font-body-md text-on-surface focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"/>
+            </div>
+            <div>
+              <label class="font-label-md text-label-md text-primary block mb-1.5" for="message">¿En qué podemos ayudarte?</label>
+              <textarea id="message" rows="3" placeholder="Fechas que necesitas y cualquier información relevante..."
+                class="w-full bg-white border border-[#E9E5D9] rounded-lg px-4 py-2.5 font-body-md text-on-surface focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors resize-none"></textarea>
+            </div>
+            <button type="submit" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12.031 2C6.488 2 2 6.487 2 12.031c0 1.868.49 3.618 1.346 5.137L2 22l4.988-1.306A10.01 10.01 0 0012.031 22C17.576 22 22 17.513 22 11.969 22 6.426 17.576 2 12.031 2zm5.07 14.29c-.214.6-1.057 1.097-1.73 1.24-.46.094-1.06.17-3.083-.661-2.588-1.04-4.256-3.678-4.384-3.847-.127-.169-1.038-1.38-1.038-2.634 0-1.253.655-1.87.888-2.12.232-.25.506-.313.675-.313.17 0 .338.002.487.01.156.008.365-.06.571.436.212.51.72 1.762.783 1.889.063.127.105.275.021.444-.084.17-.127.275-.254.424-.126.148-.265.33-.378.444-.127.126-.259.263-.111.516.148.253.656 1.081 1.408 1.751.969.862 1.786 1.13 2.04 1.257.253.126.402.105.55-.063.148-.169.634-.74.803-.994.169-.253.338-.211.57-.127.232.084 1.473.694 1.726.822.253.126.422.19.484.296.063.105.063.607-.15 1.21z"/></svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <div class="rounded-2xl overflow-hidden border border-[#E9E5D9] tonal-shadow h-[480px]">
+          <iframe
+            title="Ubicación Residencia Ana, Oropesa del Mar"
+            class="w-full h-full"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Residencia+Ana+Perros+Gatos+Oropesa+del+Mar+Castellon&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="w-full bg-primary text-on-primary">
+  <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max-width mx-auto gap-stack-md">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-on-primary text-[22px]" style="font-variation-settings:'FILL' 1;">favorite</span>
+      <span style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.1rem;color:#ffffff;">Residencia Ana</span>
+    </div>
+    <nav class="flex flex-wrap justify-center gap-4 md:gap-gutter">
+      <a href="#servicios" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim transition-opacity">Servicios</a>
+      <a href="#sobre-nosotros" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim transition-opacity">El centro</a>
+      <a href="#resenas" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim transition-opacity">Reseñas</a>
+      <a href="#contacto" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim transition-opacity">Contacto</a>
+      <a href="https://www.google.com/maps/place/?q=place_id:ChIJk0Y_Q9kEoBIRhEmEFfpTTyA" target="_blank" rel="noopener" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim transition-opacity">Google Maps</a>
+    </nav>
+    <div class="font-body-md text-sm text-on-primary opacity-70 text-center md:text-right">
+      © 2025 Residencia Ana · Oropesa del Mar, Castellón
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/34642278035" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"
+   class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.2)] hover:scale-110 transition-transform">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+    <path d="M12.031 2C6.488 2 2 6.487 2 12.031c0 1.868.49 3.618 1.346 5.137L2 22l4.988-1.306A10.01 10.01 0 0012.031 22C17.576 22 22 17.513 22 11.969 22 6.426 17.576 2 12.031 2zm5.07 14.29c-.214.6-1.057 1.097-1.73 1.24-.46.094-1.06.17-3.083-.661-2.588-1.04-4.256-3.678-4.384-3.847-.127-.169-1.038-1.38-1.038-2.634 0-1.253.655-1.87.888-2.12.232-.25.506-.313.675-.313.17 0 .338.002.487.01.156.008.365-.06.571.436.212.51.72 1.762.783 1.889.063.127.105.275.021.444-.084.17-.127.275-.254.424-.126.148-.265.33-.378.444-.127.126-.259.263-.111.516.148.253.656 1.081 1.408 1.751.969.862 1.786 1.13 2.04 1.257.253.126.402.105.55-.063.148-.169.634-.74.803-.994.169-.253.338-.211.57-.127.232.084 1.473.694 1.726.822.253.126.422.19.484.296.063.105.063.607-.15 1.21z"/>
+  </svg>
+</a>
+
+<script>
+  (function() {
+    const carousel = document.getElementById('reviewCarousel');
+    if (!carousel) return;
+    Array.from(carousel.querySelectorAll('.flex-shrink-0')).forEach(function(card) {
+      carousel.appendChild(card.cloneNode(true));
+    });
+  })();
+  document.getElementById('menuToggle').addEventListener('click', function() {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+  function handleSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const pet  = document.getElementById('petInfo').value;
+    const msg  = document.getElementById('message').value;
+    const text = encodeURIComponent('Hola, me llamo ' + name + '. Mi mascota es ' + pet + '. ' + msg);
+    window.open('https://wa.me/34642278035?text=' + text, '_blank');
+  }
+  (function() {
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.anim').forEach(function(el) { observer.observe(el); });
+  })();
+  document.querySelectorAll('details').forEach(function(detail) {
+    detail.addEventListener('toggle', function() {
+      if (detail.open) {
+        document.querySelectorAll('details').forEach(function(other) { if (other !== detail) other.removeAttribute('open'); });
+      }
+    });
+  });
+</script>
+</body>
+</html>
